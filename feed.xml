@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://serverautomation.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://serverautomation.in/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-05-17T15:51:40-04:00</updated><id>https://serverautomation.in/feed.xml</id><title type="html">Vibhat Srivastava</title><subtitle>Professional Portfolio | Software Engineer &amp; Automation Specialist</subtitle><author><name>Vibhat Srivastava</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://serverautomation.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://serverautomation.in/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-05-18T12:29:32-04:00</updated><id>https://serverautomation.in/feed.xml</id><title type="html">Vibhat Srivastava</title><subtitle>Professional Portfolio | Software Engineer &amp; Automation Specialist</subtitle><author><name>Vibhat Srivastava</name></author><entry><title type="html">Welcome to My Blog</title><link href="https://serverautomation.in/blog/2026-05-18-welcome-to-my-blog/" rel="alternate" type="text/html" title="Welcome to My Blog" /><published>2026-05-18T00:00:00-04:00</published><updated>2026-05-18T00:00:00-04:00</updated><id>https://serverautomation.in/blog/welcome-to-my-blog</id><content type="html" xml:base="https://serverautomation.in/blog/2026-05-18-welcome-to-my-blog/"><![CDATA[<h2 id="welcome">Welcome!</h2>
+
+<p>I’m excited to launch this blog on <strong>serverautomation.in</strong> where I’ll be sharing insights, tutorials, and experiences from my journey in software engineering, automation, and cloud technologies.</p>
+
+<h3 id="what-you-can-expect">What You Can Expect</h3>
+
+<p>On this blog, I’ll be covering topics including:</p>
+
+<ul>
+  <li><strong>Automation &amp; DevOps</strong>: Best practices, tools, and workflows</li>
+  <li><strong>Cloud Infrastructure</strong>: AWS, Azure, GCP deployment strategies</li>
+  <li><strong>Software Development</strong>: Clean code, design patterns, and architecture</li>
+  <li><strong>Problem Solving</strong>: Real-world challenges and solutions</li>
+  <li><strong>Learning Resources</strong>: Tools, courses, and materials that helped me grow</li>
+</ul>
+
+<h3 id="why-im-blogging">Why I’m Blogging</h3>
+
+<p>Technical blogging serves multiple purposes for me:</p>
+
+<ol>
+  <li><strong>Knowledge Sharing</strong>: Helping others who face similar challenges</li>
+  <li><strong>Learning Reinforcement</strong>: Writing about concepts deepens understanding</li>
+  <li><strong>Community Building</strong>: Connecting with fellow developers and engineers</li>
+  <li><strong>Documentation</strong>: Creating a reference for my future self</li>
+</ol>
+
+<h3 id="stay-connected">Stay Connected</h3>
+
+<p>I’ll be posting regularly on topics that matter to automation engineers and developers. Feel free to:</p>
+
+<ul>
+  <li>Subscribe to the <a href="/feed.xml">RSS feed</a></li>
+  <li>Connect with me on <a href="https://linkedin.com/in/vibhat-srivastava">LinkedIn</a></li>
+  <li>Check out my projects on <a href="https://github.com/vibhatsrivastava">GitHub</a></li>
+  <li><a href="/contact">Contact me</a> with questions or suggestions</li>
+</ul>
+
+<h3 id="coming-soon">Coming Soon</h3>
+
+<p>I have several posts in the pipeline covering:</p>
+
+<ul>
+  <li>Setting up CI/CD pipelines with GitHub Actions</li>
+  <li>Infrastructure as Code with Terraform</li>
+  <li>Kubernetes best practices for production</li>
+  <li>Python automation scripts that save hours</li>
+</ul>
+
+<p>Stay tuned, and thanks for reading!</p>
+
+<hr />
+
+<p><em>Have a topic you’d like me to cover? <a href="/contact">Let me know!</a></em></p>]]></content><author><name>Vibhat Srivastava</name></author><category term="general" /><category term="announcements" /><category term="blogging" /><category term="introduction" /><category term="serverautomation" /><summary type="html"><![CDATA[Welcome!]]></summary></entry></feed>
