@@ -9,73 +9,32 @@
 
   
 
-  <title>Blog</title>
+  <title>Engineering Blog &amp; Technical Insights</title>
 
   
   <meta name="author" content="Vibhat Srivastava">
   
 
-  <meta name="description" content="Insights on Automation, DevOps &amp; Software Engineering">
+  <meta name="description" content="DevOps, Multi-Cloud Automation, Platform Engineering &amp; Agentic AI">
 
   
 
-  
+  <!-- Google Fonts Preconnect & Modern Typefaces: Outfit, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-    
-      
+  <!-- Core Frameworks -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-    
-      
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-
-
-    
+  <!-- Base Theme Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+  <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
   
-
-  
-    
-      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
-    
-      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
-    
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
-  <meta property="og:site_name" content="Vibhat Srivastava">
-  <meta property="og:title" content="Blog">
-  <meta property="og:description" content="Insights on Automation, DevOps &amp; Software Engineering">
+  <!-- Custom Modern Design System (with Cache Buster) -->
+  <link rel="stylesheet" href="/assets/css/main-custom.css?v=1791901987"><meta property="og:title" content="Engineering Blog &amp; Technical Insights">
+  <meta property="og:description" content="DevOps, Multi-Cloud Automation, Platform Engineering &amp; Agentic AI">
 
   
 
@@ -88,21 +47,13 @@
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:site" content="@">
-  <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Blog">
-  <meta property="twitter:description" content="Insights on Automation, DevOps &amp; Software Engineering">
+  <meta property="twitter:title" content="Engineering Blog &amp; Technical Insights">
+  <meta property="twitter:description" content="DevOps, Multi-Cloud Automation, Platform Engineering &amp; Agentic AI">
 
   
 
   
-
-
-  
-
-  
-
 </head>
 
 
@@ -111,7 +62,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://serverautomation.in/">Vibhat Srivastava</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand navbar-brand-logo" href="https://serverautomation.in/"><img alt="Vibhat Srivastava Logo" src="/assets/img/logo.png"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -121,24 +72,110 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
+            <a class="nav-link" href="/projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
+            <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
-          </li></ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
   </div>
 
+  
+    
+      <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+  <i class="fas fa-moon" style="color: #6366f1;" aria-hidden="true"></i>
+</button>
+
+    
   
 
   
 
 </nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Welcome to My Blog", \
+          "category" : "bloggingintroductionserverautomation", \
+          "url"      : "/blog/2026-05-18-welcome-to-my-blog/", \
+          "date"     : "May 18, 2026" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Vibhat Srivastava", \
+          "category" : "page", \
+          "url"      : "/about/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Engineering Blog &amp; Technical Insights", \
+          "category" : "page", \
+          "url"      : "/blog/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Contact &amp; Collaboration", \
+          "category" : "page", \
+          "url"      : "/contact/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Server Automation Tech", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Featured Engineering Projects", \
+          "category" : "page", \
+          "url"      : "/projects/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Professional Resume", \
+          "category" : "page", \
+          "url"      : "/resume/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
 
 
 
@@ -159,11 +196,11 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>Blog</h1>
+          <h1>Engineering Blog & Technical Insights</h1>
           
             
               <hr class="small">
-              <span class="page-subheading">Insights on Automation, DevOps & Software Engineering</span>
+              <span class="page-subheading">DevOps, Multi-Cloud Automation, Platform Engineering & Agentic AI</span>
             
           
 
@@ -184,45 +221,87 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <p>Welcome to my blog! Here I share practical insights, tutorials, and experiences from my work in software engineering, automation, and cloud technologies.</p>
+      <nav class="pro-breadcrumb" aria-label="Breadcrumb">
+  <a href="/"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+  <span class="separator">/</span>
+  <span class="current">Blog</span>
+</nav>
 
-<h2 id="recent-posts">Recent Posts</h2>
+<div class="lead" style="margin-bottom: 1.5rem;">
+  Practical guides, architectural case studies, and field notes from 14+ years in cloud infrastructure, automation pipelines, and emerging Agentic AI developer tooling.
+</div>
 
-<!-- The Beautiful Jekyll theme will automatically list your blog posts here -->
+<!-- Category / Tag Filter Pills -->
+<div class="blog-filter-bar" role="toolbar" aria-label="Filter blog posts by topic">
+  <button type="button" class="filter-pill active" data-filter="all">All Topics</button>
+  <button type="button" class="filter-pill" data-filter="automation">Automation</button>
+  <button type="button" class="filter-pill" data-filter="devops">DevOps</button>
+  <button type="button" class="filter-pill" data-filter="cloud">Cloud &amp; AWS</button>
+  <button type="button" class="filter-pill" data-filter="agentic-ai">Agentic AI</button>
+</div>
 
-<hr />
+<!-- Posts List -->
+<div class="posts-list">
+  
+  <article class="blog-post-card" data-tags="blogging introduction serverautomation general announcements">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+      <span class="role-badge" style="font-size: 0.7rem; padding: 0.2rem 0.6rem;">
+        GENERAL
+      </span>
+      <span style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-code);">
+        <i class="far fa-clock"></i> May 18, 2026
+      </span>
+    </div>
 
-<h3 id="topics-i-write-about">Topics I Write About</h3>
+    <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+      <a href="/blog/2026-05-18-welcome-to-my-blog/" style="color: var(--text-primary); text-decoration: none;">
+        Welcome to My Blog
+      </a>
+    </h3>
 
-<ul>
-  <li><strong>🔧 Automation &amp; DevOps</strong>: CI/CD pipelines, workflow optimization, tools &amp; best practices</li>
-  <li><strong>☁️ Cloud Infrastructure</strong>: AWS, Azure, GCP architecture and deployment strategies</li>
-  <li><strong>💻 Software Development</strong>: Clean code, design patterns, modern frameworks</li>
-  <li><strong>🔍 Problem Solving</strong>: Real-world challenges and their solutions</li>
-  <li><strong>📚 Learning Resources</strong>: Tools, courses, and materials for continuous growth</li>
-</ul>
+    
+    <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 0.75rem;">
+      Starting my journey in technical blogging
+    </p>
+    
 
-<h3 id="stay-updated">Stay Updated</h3>
+    <p style="margin-bottom: 1rem; font-size: 0.95rem;">
+      Welcome!
 
-<ul>
-  <li><strong>RSS Feed</strong>: Subscribe to my <a href="/feed.xml">RSS feed</a> to get notified of new posts</li>
-  <li><strong>Categories</strong>: Browse posts by <a href="/categories">category</a> <em>(coming soon)</em></li>
-  <li><strong>Tags</strong>: Explore content by <a href="/tags">topic tags</a> <em>(coming soon)</em></li>
-</ul>
+    </p>
 
-<h3 id="lets-connect">Let’s Connect</h3>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+      <div class="tech-stack-wrap" style="margin: 0;">
+        
+        <span class="tech-tag" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">#blogging</span>
+        
+        <span class="tech-tag" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">#introduction</span>
+        
+        <span class="tech-tag" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">#serverautomation</span>
+        
+      </div>
+      <a href="/blog/2026-05-18-welcome-to-my-blog/" class="btn-pro btn-pro-outline" style="font-size: 0.85rem; padding: 0.4rem 0.9rem;">
+        Read Article <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </article>
+  
+</div>
 
-<p>Have feedback on a post or a topic you’d like me to cover? I’d love to hear from you!</p>
-
-<ul>
-  <li><a href="/contact">Contact Me</a></li>
-  <li><a href="https://linkedin.com/in/vibhat-srivastava">LinkedIn</a></li>
-  <li><a href="https://github.com/vibhatsrivastava">GitHub</a></li>
-</ul>
-
-<hr />
-
-<p><em>New posts are published regularly. Check back often or subscribe to stay informed!</em></p>
+<!-- Newsletter Subscription Card -->
+<div class="newsletter-card">
+  <div style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 0.5rem;">
+    <i class="fas fa-paper-plane"></i>
+  </div>
+  <h3>Stay in the Automation Loop</h3>
+  <p style="max-width: 520px; margin: 0.5rem auto 1.5rem; color: var(--text-muted);">
+    Get notified when new deep-dives into Infrastructure as Code, Kubernetes GitOps, and Agentic AI workflows are published. No spam, ever.
+  </p>
+  <form class="contact-form-pro" style="max-width: 440px; margin: 0 auto; display: flex; gap: 0.5rem; flex-wrap: wrap;" onsubmit="event.preventDefault(); window.VibhatPortfolio.showToast('Thank you for subscribing!'); this.reset();">
+    <input type="email" class="form-input-pro" placeholder="Enter your email address" style="flex: 1; min-width: 220px;" required="" />
+    <button type="submit" class="btn-pro btn-pro-primary" style="white-space: nowrap;">Subscribe</button>
+  </form>
+</div>
 
 
       
@@ -317,6 +396,10 @@
   
 
 
+
+  
+    <script src="/assets/js/main-custom.js"></script>
+  
 
 
 

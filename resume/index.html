@@ -9,73 +9,32 @@
 
   
 
-  <title>Resume</title>
+  <title>Professional Resume</title>
 
   
   <meta name="author" content="Vibhat Srivastava">
   
 
-  <meta name="description" content="Professional Experience, Skills, and Achievements">
+  <meta name="description" content="Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer">
 
   
 
-  
+  <!-- Google Fonts Preconnect & Modern Typefaces: Outfit, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-    
-      
+  <!-- Core Frameworks -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-    
-      
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-
-
-    
+  <!-- Base Theme Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+  <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
   
-
-  
-    
-      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
-    
-      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
-    
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
-  <meta property="og:site_name" content="Vibhat Srivastava">
-  <meta property="og:title" content="Resume">
-  <meta property="og:description" content="Professional Experience, Skills, and Achievements">
+  <!-- Custom Modern Design System (with Cache Buster) -->
+  <link rel="stylesheet" href="/assets/css/main-custom.css?v=1791901987"><meta property="og:title" content="Professional Resume">
+  <meta property="og:description" content="Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer">
 
   
 
@@ -88,21 +47,13 @@
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:site" content="@">
-  <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Resume">
-  <meta property="twitter:description" content="Professional Experience, Skills, and Achievements">
+  <meta property="twitter:title" content="Professional Resume">
+  <meta property="twitter:description" content="Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer">
 
   
 
   
-
-
-  
-
-  
-
 </head>
 
 
@@ -111,7 +62,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://serverautomation.in/">Vibhat Srivastava</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand navbar-brand-logo" href="https://serverautomation.in/"><img alt="Vibhat Srivastava Logo" src="/assets/img/logo.png"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -121,24 +72,110 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
+            <a class="nav-link" href="/projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
+            <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
-          </li></ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
   </div>
 
+  
+    
+      <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+  <i class="fas fa-moon" style="color: #6366f1;" aria-hidden="true"></i>
+</button>
+
+    
   
 
   
 
 </nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Welcome to My Blog", \
+          "category" : "bloggingintroductionserverautomation", \
+          "url"      : "/blog/2026-05-18-welcome-to-my-blog/", \
+          "date"     : "May 18, 2026" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Vibhat Srivastava", \
+          "category" : "page", \
+          "url"      : "/about/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Engineering Blog &amp; Technical Insights", \
+          "category" : "page", \
+          "url"      : "/blog/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Contact &amp; Collaboration", \
+          "category" : "page", \
+          "url"      : "/contact/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Server Automation Tech", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Featured Engineering Projects", \
+          "category" : "page", \
+          "url"      : "/projects/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Professional Resume", \
+          "category" : "page", \
+          "url"      : "/resume/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
 
 
 
@@ -159,11 +196,11 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>Resume</h1>
+          <h1>Professional Resume</h1>
           
             
               <hr class="small">
-              <span class="page-subheading">Professional Experience, Skills, and Achievements</span>
+              <span class="page-subheading">Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer</span>
             
           
 
@@ -184,147 +221,203 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <div style="text-align: center; margin-bottom: 30px;">
-  <a href="mailto:vibhat.sri13@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
-  <a href="https://linkedin.com/in/vibhat-srivastava" class="btn btn-outline-primary" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <nav class="pro-breadcrumb" aria-label="Breadcrumb">
+  <a href="/"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+  <span class="separator">/</span>
+  <span class="current">Resume</span>
+</nav>
+
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+  <div>
+    <h3 style="margin: 0;">Vibhat Srivastava</h3>
+    <div style="color: var(--text-muted); font-size: 0.95rem;">Infrastructure Automation Architect &middot; Agentic AI Developer &middot; DevOps Engineer | Bangalore, India | <a href="mailto:vibhat.sri13@gmail.com">vibhat.sri13@gmail.com</a></div>
+  </div>
+  <div>
+    <button type="button" class="btn-pro btn-pro-primary" onclick="window.print()">
+      <i class="fas fa-print" aria-hidden="true"></i> Print / Download PDF
+    </button>
+  </div>
 </div>
 
-<h2 id="professional-experience">Professional Experience</h2>
+<hr />
+
+<h2 id="executive-summary">Executive Summary</h2>
+
+<p>Enterprise <strong>Infrastructure Automation Architect</strong>, <strong>Agentic AI Developer</strong>, and <strong>Senior DevOps Engineer</strong> with <strong>14+ years of hands-on expertise</strong> designing, developing, and operating resilient multi-cloud platforms, automation tooling, and autonomous systems. Demonstrated track record in eliminating configuration drift, reducing deployment cycles, and establishing enterprise GitOps and Infrastructure as Code (IaC) standards using Terraform, Ansible, AWS, Kubernetes, and Python. Specialized in engineering <strong>Agentic AI systems</strong> using LangGraph, Python, and RAG to automate observability triage and incident self-healing.</p>
+
+<hr />
+
+<h2 id="career-experience-timeline">Career Experience Timeline</h2>
 
 <div class="timeline">
-  
+  <!-- Experience 1 -->
   <div class="timeline-item">
+    <div class="timeline-dot"></div>
     <div class="timeline-content">
-      <h3 class="timeline-title">Lead Platform Architect / Senior DevOps Lead</h3>
-      <div class="timeline-meta">Enterprise Solutions | 2022 - Present (Bangalore, India)</div>
+      <div class="timeline-header">
+        <h4 class="timeline-title">Senior DevOps &amp; Automation Lead</h4>
+        <span class="timeline-period">2021 - Present</span>
+      </div>
+      <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">Enterprise Cloud &amp; Platform Engineering | Bangalore, India</div>
       <ul>
-        <li>Architected and implemented enterprise Kubernetes platforms (AWS EKS) with automated container scaling, reducing infrastructure costs by <strong>30%</strong>.</li>
-        <li>Built an autonomous log analysis AI agent using LangGraph and RAG, automating <strong>75%</strong> of routine CI/CD error diagnosis tasks.</li>
-        <li>Established Infrastructure as Code (IaC) standards across 15+ engineering teams using Terraform and GitOps practices.</li>
-        <li>Led and mentored a cross-functional team of 6 DevOps and platform engineers.</li>
+        <li>Architected multi-account AWS landing zones and automated provisioning using reusable <strong>Terraform modules</strong>, cutting environment turnaround time by <strong>85%</strong>.</li>
+        <li>Spearheaded configuration management with <strong>Ansible</strong> across 500+ Linux/Windows instances, enforcing automated security baselines and CIS benchmarks.</li>
+        <li>Integrated <strong>Agentic AI incident triage pipelines</strong> using LangGraph and Python, automating root cause analysis on CloudWatch alerts and decreasing MTTR by <strong>60%</strong>.</li>
+        <li>Established GitHub Actions CI/CD release governance with automated static analysis, container image vulnerability scanning, and approval gates.</li>
       </ul>
-      <div class="badge-container">
-        <span class="skill-badge badge-devops">Kubernetes</span>
-        <span class="skill-badge badge-cloud">AWS</span>
-        <span class="skill-badge badge-cloud">Terraform</span>
-        <span class="skill-badge badge-ai">LangGraph</span>
-        <span class="skill-badge badge-lang">Python</span>
+      <div class="tech-stack-wrap">
+        <span class="tech-tag">Terraform</span>
+        <span class="tech-tag">AWS</span>
+        <span class="tech-tag">Ansible</span>
+        <span class="tech-tag">LangGraph / Python</span>
+        <span class="tech-tag">GitHub Actions</span>
+        <span class="tech-tag">Docker</span>
       </div>
     </div>
   </div>
 
+  <!-- Experience 2 -->
   <div class="timeline-item">
+    <div class="timeline-dot"></div>
     <div class="timeline-content">
-      <h3 class="timeline-title">Senior Infrastructure Automation Engineer</h3>
-      <div class="timeline-meta">Systems Automation Inc. | 2017 - 2022</div>
+      <div class="timeline-header">
+        <h4 class="timeline-title">Infrastructure Automation Engineer &amp; Platform Specialist</h4>
+        <span class="timeline-period">2016 - 2021</span>
+      </div>
+      <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">Enterprise Infrastructure Services</div>
       <ul>
-        <li>Designed and implemented enterprise-wide automation playbooks using Ansible, decreasing configuration drift by <strong>95%</strong>.</li>
-        <li>Built advanced PowerShell and Python scripting toolkits to automate Windows and Linux systems management across on-prem and cloud datacenters.</li>
-        <li>Pioneered migration of legacy build systems to GitHub Actions pipelines, speeding up release times by <strong>70%</strong>.</li>
-        <li>Designed highly available disaster recovery environments in AWS with automated failover processes.</li>
+        <li>Designed robust PowerShell and Python automation frameworks for enterprise server provisioning, automated storage management, and OS patching.</li>
+        <li>Containerized legacy applications using Docker and migrated monolithic workloads to scalable container clusters.</li>
+        <li>Automated hybrid cloud infrastructure provisioning between VMware vSphere on-prem and AWS cloud resources.</li>
+        <li>Achieved <strong>99.99% system availability</strong> and zero configuration drift incidents across enterprise database and application clusters.</li>
       </ul>
-      <div class="badge-container">
-        <span class="skill-badge badge-tools">Ansible</span>
-        <span class="skill-badge badge-lang">PowerShell</span>
-        <span class="skill-badge badge-lang">Python</span>
-        <span class="skill-badge badge-cloud">AWS</span>
-        <span class="skill-badge badge-tools">GitHub Actions</span>
+      <div class="tech-stack-wrap">
+        <span class="tech-tag">PowerShell</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">VMware</span>
+        <span class="tech-tag">AWS EC2/VPC</span>
+        <span class="tech-tag">Docker</span>
+        <span class="tech-tag">CI/CD</span>
       </div>
     </div>
   </div>
 
+  <!-- Experience 3 -->
   <div class="timeline-item">
+    <div class="timeline-dot"></div>
     <div class="timeline-content">
-      <h3 class="timeline-title">DevOps &amp; Infrastructure Engineer</h3>
-      <div class="timeline-meta">Global Tech Solutions | 2012 - 2017</div>
-      <ul>
-        <li>Administered complex multi-tenant Linux/Windows servers, achieving <strong>99.99%</strong> uptime SLAs.</li>
-        <li>Implemented full system monitoring stack using Prometheus, Grafana, and ELK, providing complete visibility into application performance.</li>
-        <li>Managed CI/CD environments (Jenkins) and automated deployment operations for Java/Node.js web applications.</li>
-      </ul>
-      <div class="badge-container">
-        <span class="skill-badge badge-tools">Jenkins</span>
-        <span class="skill-badge badge-tools">Prometheus</span>
-        <span class="skill-badge badge-tools">Grafana</span>
-        <span class="skill-badge badge-db">ELK Stack</span>
-        <span class="skill-badge badge-devops">Docker</span>
+      <div class="timeline-header">
+        <h4 class="timeline-title">Systems &amp; DevOps Engineer</h4>
+        <span class="timeline-period">2011 - 2016</span>
       </div>
-    </div>
-  </div>
-
-</div>
-
-<hr />
-
-<h2 id="technical-skills">Technical Skills</h2>
-
-<div class="showcase-grid">
-  <div class="interactive-card">
-    <h3>Languages</h3>
-    <div class="badge-container">
-      <span class="skill-badge badge-lang">Python</span>
-      <span class="skill-badge badge-lang">PowerShell</span>
-      <span class="skill-badge badge-lang">Bash / Shell</span>
-      <span class="skill-badge badge-lang">JavaScript</span>
-      <span class="skill-badge badge-lang">SQL</span>
-    </div>
-  </div>
-  
-  <div class="interactive-card">
-    <h3>DevOps &amp; Containers</h3>
-    <div class="badge-container">
-      <span class="skill-badge badge-devops">Docker</span>
-      <span class="skill-badge badge-devops">Kubernetes / EKS</span>
-      <span class="skill-badge badge-tools">Ansible</span>
-      <span class="skill-badge badge-tools">GitHub Actions</span>
-      <span class="skill-badge badge-tools">Git / GitOps</span>
-    </div>
-  </div>
-
-  <div class="interactive-card">
-    <h3>Cloud &amp; Database</h3>
-    <div class="badge-container">
-      <span class="skill-badge badge-cloud">AWS (EC2, EKS, RDS, S3)</span>
-      <span class="skill-badge badge-cloud">Terraform (IaC)</span>
-      <span class="skill-badge badge-db">PostgreSQL</span>
-      <span class="skill-badge badge-db">Redis</span>
-      <span class="skill-badge badge-db">MongoDB</span>
-    </div>
-  </div>
-
-  <div class="interactive-card">
-    <h3>Agentic AI Development</h3>
-    <div class="badge-container">
-      <span class="skill-badge badge-ai">LangGraph</span>
-      <span class="skill-badge badge-ai">RAG Systems</span>
-      <span class="skill-badge badge-ai">LLM Prompting</span>
-      <span class="skill-badge badge-ai">Multi-Agent Systems</span>
+      <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">Information Technology Operations</div>
+      <ul>
+        <li>Engineered automated administrative toolsets in PowerShell and Bash for automated system health checks, backup verifications, and alert dispatches.</li>
+        <li>Maintained enterprise Active Directory, DNS, network topologies, and high-availability Windows/Linux servers.</li>
+        <li>Reduced recurring manual operational tickets by <strong>70%</strong> by deploying self-service scripts and scheduled automation jobs.</li>
+      </ul>
+      <div class="tech-stack-wrap">
+        <span class="tech-tag">Windows Server</span>
+        <span class="tech-tag">Linux</span>
+        <span class="tech-tag">PowerShell</span>
+        <span class="tech-tag">Bash</span>
+        <span class="tech-tag">Active Directory</span>
+      </div>
     </div>
   </div>
 </div>
 
 <hr />
 
-<h2 id="certifications">Certifications</h2>
+<h2 id="technical-skills-breakdown">Technical Skills Breakdown</h2>
+
+<div class="skills-section">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Terraform &amp; Infrastructure as Code</span>
+          <span class="skill-percentage">95%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="95%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Ansible Configuration Management</span>
+          <span class="skill-percentage">94%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="94%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Amazon Web Services (AWS)</span>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="90%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>PowerShell &amp; Python Automation</span>
+          <span class="skill-percentage">92%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="92%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Docker &amp; Container Workloads</span>
+          <span class="skill-percentage">88%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="88%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Agentic AI Workflows (LangGraph, LLMs)</span>
+          <span class="skill-percentage">82%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="82%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2 id="certifications--professional-learning">Certifications &amp; Professional Learning</h2>
 
 <ul>
   <li><strong>AWS Certified Solutions Architect – Associate</strong></li>
-  <li><strong>HashiCorp Terraform Associate</strong></li>
-  <li><strong>Certified Kubernetes Administrator (CKA)</strong></li>
-  <li><strong>Advanced PowerShell Scripting &amp; Automation</strong></li>
+  <li><strong>HashiCorp Certified: Terraform Associate</strong></li>
+  <li><strong>Red Hat Certified System Administrator / Ansible Automation</strong></li>
+  <li><strong>LangGraph &amp; Autonomous Agentic Workflows Practitioner</strong></li>
 </ul>
 
 <hr />
 
-<h2 id="education">Education</h2>
-
-<ul>
-  <li><strong>Bachelor of Engineering / Computer Science</strong>
-    <ul>
-      <li>Strong emphasis on Systems Programming, Networks, and Databases.</li>
-    </ul>
-  </li>
-</ul>
+<div class="text-center" style="margin: 3rem 0;">
+  <button type="button" class="btn-pro btn-pro-primary" onclick="window.print()">
+    <i class="fas fa-file-pdf"></i> Save / Print PDF
+  </button>
+  <a href="/projects" class="btn-pro btn-pro-outline">
+    <i class="fas fa-th-large"></i> View Project Case Studies
+  </a>
+  <a href="/contact" class="btn-pro btn-pro-outline">
+    <i class="fas fa-envelope"></i> Contact Vibhat
+  </a>
+</div>
 
 
       
@@ -419,6 +512,10 @@
   
 
 
+
+  
+    <script src="/assets/js/main-custom.js"></script>
+  
 
 
 

@@ -9,73 +9,32 @@
 
   
 
-  <title>Vibhat Srivastava</title>
+  <title>Server Automation Tech</title>
 
   
   <meta name="author" content="Vibhat Srivastava">
   
 
-  <meta name="description" content="Senior DevOps &amp; Infrastructure Automation Engineer | Agentic AI Developer | AWS &amp; Platform Operations Specialist">
+  <meta name="description" content="Engineering Intelligent Automation. Powering the Future with AI">
 
   
 
-  
+  <!-- Google Fonts Preconnect & Modern Typefaces: Outfit, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-    
-      
+  <!-- Core Frameworks -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-    
-      
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-
-
-    
+  <!-- Base Theme Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+  <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
   
-
-  
-    
-      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
-    
-      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
-    
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
-  <meta property="og:site_name" content="Vibhat Srivastava">
-  <meta property="og:title" content="Vibhat Srivastava">
-  <meta property="og:description" content="Senior DevOps &amp; Infrastructure Automation Engineer | Agentic AI Developer | AWS &amp; Platform Operations Specialist">
+  <!-- Custom Modern Design System (with Cache Buster) -->
+  <link rel="stylesheet" href="/assets/css/main-custom.css?v=1791901987"><meta property="og:title" content="Server Automation Tech">
+  <meta property="og:description" content="Engineering Intelligent Automation. Powering the Future with AI">
 
   
 
@@ -88,21 +47,13 @@
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:site" content="@">
-  <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Vibhat Srivastava">
-  <meta property="twitter:description" content="Senior DevOps &amp; Infrastructure Automation Engineer | Agentic AI Developer | AWS &amp; Platform Operations Specialist">
+  <meta property="twitter:title" content="Server Automation Tech">
+  <meta property="twitter:description" content="Engineering Intelligent Automation. Powering the Future with AI">
 
   
 
   
-
-
-  
-
-  
-
 </head>
 
 
@@ -111,7 +62,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://serverautomation.in/">Vibhat Srivastava</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand navbar-brand-logo" href="https://serverautomation.in/"><img alt="Vibhat Srivastava Logo" src="/assets/img/logo.png"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -121,24 +72,110 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
+            <a class="nav-link" href="/projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
+            <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
-          </li></ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
   </div>
 
+  
+    
+      <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+  <i class="fas fa-moon" style="color: #6366f1;" aria-hidden="true"></i>
+</button>
+
+    
   
 
   
 
 </nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Welcome to My Blog", \
+          "category" : "bloggingintroductionserverautomation", \
+          "url"      : "/blog/2026-05-18-welcome-to-my-blog/", \
+          "date"     : "May 18, 2026" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Vibhat Srivastava", \
+          "category" : "page", \
+          "url"      : "/about/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Engineering Blog &amp; Technical Insights", \
+          "category" : "page", \
+          "url"      : "/blog/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Contact &amp; Collaboration", \
+          "category" : "page", \
+          "url"      : "/contact/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Server Automation Tech", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Featured Engineering Projects", \
+          "category" : "page", \
+          "url"      : "/projects/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Professional Resume", \
+          "category" : "page", \
+          "url"      : "/resume/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
 
 
 
@@ -159,11 +196,11 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>Vibhat Srivastava</h1>
+          <h1>Server Automation Tech</h1>
           
             
               <hr class="small">
-              <span class="page-subheading">Senior DevOps & Infrastructure Automation Engineer | Agentic AI Developer | AWS & Platform Operations Specialist</span>
+              <span class="page-subheading">Engineering Intelligent Automation. Powering the Future with AI</span>
             
           
 
@@ -184,58 +221,162 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <h2 id="welcome-to-my-portfolio">Welcome to My Portfolio</h2>
+      <div class="row align-items-center" style="margin-bottom: 2.5rem; padding-top: 1rem;">
+  <div class="col-lg-12">
+    <div class="role-badge" style="margin-bottom: 1rem; display: inline-block;">
+      <i class="fas fa-layer-group"></i> Tools, Applications &amp; Platforms &middot; Intelligent Infrastructure Automation
+    </div>
+    <h2 style="font-size: clamp(1.8rem, 2.6vw, 2.5rem); line-height: 1.25; margin-top: 0; margin-bottom: 1.25rem; font-weight: 800;">
+      Building Tools, Applications &amp; Platforms for AI Enabled Infrastructure Automation
+    </h2>
+    <p class="lead" style="margin-bottom: 1.75rem;">
+      <strong>Server Automation Tech</strong> specializes in <strong>designing and developing custom tools, applications, and enterprise platforms</strong> for intelligent, AI-enabled infrastructure automation. By uniting battle-tested DevOps architectures with cutting-edge <strong>Agentic AI</strong> and automated telemetry, we build systems that eliminate operational toil, self-heal in real time, and scale with zero drift.
+    </p>
 
-<p>I am a Senior DevOps and Infrastructure Automation Engineer with <strong>14+ years of experience</strong> designing, automating, and supporting enterprise IT infrastructure across on-premises and cloud environments. Over the past year, I have expanded my focus into <strong>Agentic AI development</strong>, building autonomous AI agent systems, multi-agent workflows, and RAG systems.</p>
+    <!-- Founder & Architect Attribution Anchor -->
+    <div class="founder-badge">
+      <img src="/assets/img/vibhat-srivastava.jpg" alt="Vibhat Srivastava" class="founder-badge-avatar" />
+      <span class="founder-badge-text">
+        Architected &amp; Developed by <a href="/about">Vibhat Srivastava</a> &middot; Infrastructure Automation Architect &middot; Agentic AI Developer &middot; DevOps Engineer
+      </span>
+    </div>
 
-<hr />
-
-<h3 id="core-areas-of-expertise">Core Areas of Expertise</h3>
-
-<div class="showcase-grid">
-  <div class="interactive-card">
-    <div class="card-icon"><i class="fa-solid fa-server"></i></div>
-    <h3>DevOps &amp; Platform Engineering</h3>
-    <p>Designing, building, and running developer platforms, self-service infrastructure, and high-performance continuous delivery workflows.</p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="/projects" class="btn-pro btn-pro-primary">
+        <i class="fas fa-cubes"></i> Explore Tools &amp; Platforms
+      </a>
+      <a href="/about" class="btn-pro btn-pro-outline">
+        <i class="fas fa-user-tie"></i> About the Architect
+      </a>
+      <a href="/resume" class="btn-pro btn-pro-outline">
+        <i class="fas fa-file-alt"></i> View Resume
+      </a>
+      <a href="/contact" class="btn-pro btn-pro-outline">
+        <i class="fas fa-paper-plane"></i> Let's Connect
+      </a>
+    </div>
   </div>
-  <div class="interactive-card">
-    <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
-    <h3>Infrastructure Automation</h3>
-    <p>Replacing manual efforts with infrastructure as code (IaC) and configuration management using Ansible, Terraform, and scripting.</p>
+</div>
+
+<!-- Key Performance Metrics -->
+<div class="metrics-grid" style="margin: 3rem 0; padding: 1.75rem;">
+  <div class="metric-item">
+    <span class="metric-value">14+</span>
+    <span class="metric-label">Years of Systems Expertise</span>
   </div>
-  <div class="interactive-card">
-    <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
-    <h3>Agentic AI Engineering</h3>
-    <p>Architecting autonomous agents and Retrieval-Augmented Generation (RAG) workflows using LLMs, LangGraph, and Python.</p>
+  <div class="metric-item">
+    <span class="metric-value">85%</span>
+    <span class="metric-label">Deployment Acceleration</span>
+  </div>
+  <div class="metric-item">
+    <span class="metric-value">99.99%</span>
+    <span class="metric-label">Target Platform Availability</span>
+  </div>
+  <div class="metric-item">
+    <span class="metric-value">60%</span>
+    <span class="metric-label">MTTR Incident Reduction</span>
   </div>
 </div>
 
 <hr />
 
-<h3 id="key-technologies--capabilities">Key Technologies &amp; Capabilities</h3>
+<h2 id="core-engineering-pillars">Core Engineering Pillars</h2>
 
-<div class="badge-container">
-  <span class="skill-badge badge-devops"><i class="fa-brands fa-docker"></i> Docker</span>
-  <span class="skill-badge badge-devops"><i class="fa-solid fa-cubes"></i> Kubernetes</span>
-  <span class="skill-badge badge-cloud"><i class="fa-brands fa-aws"></i> AWS</span>
-  <span class="skill-badge badge-cloud"><i class="fa-solid fa-cloud"></i> Terraform</span>
-  <span class="skill-badge badge-tools"><i class="fa-solid fa-bolt"></i> Ansible</span>
-  <span class="skill-badge badge-lang"><i class="fa-brands fa-python"></i> Python</span>
-  <span class="skill-badge badge-lang"><i class="fa-solid fa-terminal"></i> PowerShell</span>
-  <span class="skill-badge badge-ai"><i class="fa-solid fa-brain"></i> LangGraph / AI Agents</span>
+<div class="row" style="margin: 2.5rem 0;">
+  <div class="col-md-4 mb-4">
+    <div class="timeline-content" style="height: 100%;">
+      <div style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 0.75rem;">
+        <i class="fas fa-tools"></i>
+      </div>
+      <h4>Infrastructure Automation Platforms &amp; Tools</h4>
+      <p style="font-size: 0.95rem;">
+        Custom developer tooling, CLI utilities, and enterprise-grade Terraform/Ansible platforms enforcing immutable infrastructure, zero configuration drift, and automated compliance.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="timeline-content" style="height: 100%;">
+      <div style="font-size: 2rem; color: var(--accent-secondary); margin-bottom: 0.75rem;">
+        <i class="fas fa-robot"></i>
+      </div>
+      <h4>AI-Enabled Applications &amp; Agentic Systems</h4>
+      <p style="font-size: 0.95rem;">
+        Intelligent SRE applications and autonomous agents built with LangGraph, Python, and RAG that monitor telemetry, isolate root causes, and execute automated remediations.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="timeline-content" style="height: 100%;">
+      <div style="font-size: 2rem; color: var(--accent-tertiary); margin-bottom: 0.75rem;">
+        <i class="fas fa-dharmachakra"></i>
+      </div>
+      <h4>Cloud-Native GitOps &amp; Delivery Pipelines</h4>
+      <p style="font-size: 0.95rem;">
+        Multi-tenant AWS EKS platforms synchronized declaratively with ArgoCD, achieving continuous delivery, automated canary verification, and zero-downtime rollouts.
+      </p>
+    </div>
+  </div>
 </div>
 
 <hr />
 
-<h3 id="featured-projects--work">Featured Projects &amp; Work</h3>
+<div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-top: 3rem; margin-bottom: 1.5rem;">
+  <h2 style="margin: 0;">Featured Tools, Applications &amp; Case Studies</h2>
+  <a href="/projects" class="btn-pro btn-pro-outline" style="font-size: 0.85rem; padding: 0.35rem 0.8rem;">
+    View All Projects <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
 
-<p>I believe in building systems that are robust, automated, and observable. 
-Check out my <a href="/projects">Projects</a> page for details on my engineering work, or check out my <a href="/resume">Resume</a> to see my full professional timeline.</p>
+<div class="row">
+  <div class="col-md-6 mb-4">
+    <div class="project-card" style="margin-bottom: 0; height: 100%;">
+      <div class="project-card-image-wrap">
+        <img src="/assets/img/projects/project1.svg" alt="Multi-Cloud Automation" class="project-card-image" loading="lazy" />
+      </div>
+      <div class="project-card-body">
+        <span class="role-badge" style="font-size: 0.7rem;">Infrastructure as Code</span>
+        <h4 style="margin-top: 0.75rem;"><a href="/projects" style="color: var(--text-primary); text-decoration: none;">Enterprise Multi-Cloud Automation Platform</a></h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+          Automating 500+ cloud and on-prem nodes with modular Terraform and Ansible tools for zero-drift compliance.
+        </p>
+      </div>
+    </div>
+  </div>
 
-<div style="text-align: center; margin: 40px 0 20px 0; gap: 15px; display: flex; justify-content: center; flex-wrap: wrap;">
-  <a href="/projects" class="btn btn-primary">Explore Projects</a>
-  <a href="/resume" class="btn btn-outline-primary">View Full Resume</a>
-  <a href="/contact" class="btn btn-outline-primary">Get In Touch</a>
+  <div class="col-md-6 mb-4">
+    <div class="project-card" style="margin-bottom: 0; height: 100%;">
+      <div class="project-card-image-wrap">
+        <img src="/assets/img/projects/project2.svg" alt="Agentic AI DevOps" class="project-card-image" loading="lazy" />
+      </div>
+      <div class="project-card-body">
+        <span class="role-badge" style="font-size: 0.7rem;">Agentic AI Systems</span>
+        <h4 style="margin-top: 0.75rem;"><a href="/projects" style="color: var(--text-primary); text-decoration: none;">Autonomous Incident Remediation Agent</a></h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+          LangGraph-driven agent automating alert triage and runbook remediation, cutting MTTR by 60%.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div style="margin-top: 3rem; margin-bottom: 1rem;">
+  <h2>Recent Articles from the Engineering Blog</h2>
+</div>
+
+<!-- Architecture Collaboration CTA -->
+<div class="timeline-content" style="text-align: center; padding: 2.75rem 2rem; margin-top: 3.5rem; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 16px; box-shadow: var(--card-shadow);">
+  <h3 style="margin-top: 0;">Interested in Designing &amp; Developing Intelligent Infrastructure Platforms?</h3>
+  <p style="color: var(--text-secondary); max-width: 680px; margin: 0.75rem auto 1.75rem; font-size: 1rem;">
+    Discover how Server Automation Tech engineers custom automation tools, AI-enabled developer platforms, and resilient cloud architectures.
+  </p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="/contact" class="btn-pro btn-pro-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+    <a href="/about" class="btn-pro btn-pro-outline"><i class="fas fa-user-tie"></i> Read About the Architect</a>
+  </div>
 </div>
 
 
@@ -403,6 +544,10 @@ Check out my <a href="/projects">Projects</a> page for details on my engineering
   
 
 
+
+  
+    <script src="/assets/js/main-custom.js"></script>
+  
 
 
 

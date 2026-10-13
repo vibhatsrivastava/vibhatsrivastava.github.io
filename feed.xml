@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://serverautomation.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://serverautomation.in/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-06-26T14:55:11-04:00</updated><id>https://serverautomation.in/feed.xml</id><title type="html">Vibhat Srivastava</title><subtitle>Professional Portfolio | Software Engineer &amp; Automation Specialist</subtitle><author><name>Vibhat Srivastava</name></author><entry><title type="html">Welcome to My Blog</title><link href="https://serverautomation.in/blog/2026-05-18-welcome-to-my-blog/" rel="alternate" type="text/html" title="Welcome to My Blog" /><published>2026-05-18T00:00:00-04:00</published><updated>2026-05-18T00:00:00-04:00</updated><id>https://serverautomation.in/blog/welcome-to-my-blog</id><content type="html" xml:base="https://serverautomation.in/blog/2026-05-18-welcome-to-my-blog/"><![CDATA[<h2 id="welcome">Welcome!</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://serverautomation.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://serverautomation.in/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-10-13T10:33:07-04:00</updated><id>https://serverautomation.in/feed.xml</id><title type="html">Vibhat Srivastava</title><subtitle>Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer</subtitle><author><name>Vibhat Srivastava</name></author><entry><title type="html">Welcome to My Blog</title><link href="https://serverautomation.in/blog/2026-05-18-welcome-to-my-blog/" rel="alternate" type="text/html" title="Welcome to My Blog" /><published>2026-05-18T00:00:00-04:00</published><updated>2026-05-18T00:00:00-04:00</updated><id>https://serverautomation.in/blog/welcome-to-my-blog</id><content type="html" xml:base="https://serverautomation.in/blog/2026-05-18-welcome-to-my-blog/"><![CDATA[<h2 id="welcome">Welcome!</h2>
 
 <p>I’m excited to launch this blog on <strong>serverautomation.in</strong> where I’ll be sharing insights, tutorials, and experiences from my journey in software engineering, automation, and cloud technologies.</p>
 
@@ -25,7 +25,7 @@
   <li><strong>Documentation</strong>: Creating a reference for my future self</li>
 </ol>
 
-<h3 id="stay-connected">Stay Connected</h3>
+<h3 id="stay-connected--share">Stay Connected &amp; Share</h3>
 
 <p>I’ll be posting regularly on topics that matter to automation engineers and developers. Feel free to:</p>
 
@@ -36,19 +36,32 @@
   <li><a href="/contact">Contact me</a> with questions or suggestions</li>
 </ul>
 
-<h3 id="coming-soon">Coming Soon</h3>
-
-<p>I have several posts in the pipeline covering:</p>
-
-<ul>
-  <li>Setting up CI/CD pipelines with GitHub Actions</li>
-  <li>Infrastructure as Code with Terraform</li>
-  <li>Kubernetes best practices for production</li>
-  <li>Python automation scripts that save hours</li>
-</ul>
-
-<p>Stay tuned, and thanks for reading!</p>
+<div style="margin: 2rem 0; padding: 1.25rem; background: var(--bg-subtle); border-radius: 12px; border: 1px solid var(--border-color);">
+  <div style="font-weight: 700; margin-bottom: 0.75rem; font-size: 0.95rem;">Share this article:</div>
+  <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+    <a href="https://twitter.com/intent/tweet?text=Welcome+to+my+Engineering+Blog+by+Vibhat+Srivastava&amp;url=https://serverautomation.in" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">
+      <i class="fab fa-twitter"></i> Share on X / Twitter
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://serverautomation.in" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">
+      <i class="fab fa-linkedin"></i> Share on LinkedIn
+    </a>
+    <button type="button" class="btn-pro btn-pro-outline copy-link-btn" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">
+      <i class="fas fa-link"></i> Copy Article Link
+    </button>
+  </div>
+</div>
 
 <hr />
 
-<p><em>Have a topic you’d like me to cover? <a href="/contact">Let me know!</a></em></p>]]></content><author><name>Vibhat Srivastava</name></author><category term="general" /><category term="announcements" /><category term="blogging" /><category term="introduction" /><category term="serverautomation" /><summary type="html"><![CDATA[Welcome!]]></summary></entry></feed>
+<h3 id="related-topics--coming-soon">Related Topics &amp; Coming Soon</h3>
+
+<p>Explore these upcoming technical deep-dives:</p>
+<ul>
+  <li><strong>Infrastructure as Code:</strong> <a href="/projects">Enterprise Terraform Zero-Drift Patterns</a></li>
+  <li><strong>Agentic Workflows:</strong> <a href="/projects">Building Autonomous Incident Triage with LangGraph &amp; Python</a></li>
+  <li><strong>Kubernetes:</strong> <a href="/projects">Zero-Downtime EKS GitOps with ArgoCD</a></li>
+</ul>
+
+<hr />
+
+<p><em>Have a topic you’d like me to cover? <a href="/contact">Let me know on the Contact page!</a></em></p>]]></content><author><name>Vibhat Srivastava</name></author><category term="general" /><category term="announcements" /><category term="blogging" /><category term="introduction" /><category term="serverautomation" /><summary type="html"><![CDATA[Welcome!]]></summary></entry></feed>

@@ -9,73 +9,32 @@
 
   
 
-  <title>Projects</title>
+  <title>Featured Engineering Projects</title>
 
   
   <meta name="author" content="Vibhat Srivastava">
   
 
-  <meta name="description" content="Featured Work and Technical Case Studies">
+  <meta name="description" content="Enterprise Infrastructure Automation, Agentic AI &amp; Cloud Platforms">
 
   
 
-  
+  <!-- Google Fonts Preconnect & Modern Typefaces: Outfit, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-    
-      
+  <!-- Core Frameworks -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-    
-      
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-
-
-    
+  <!-- Base Theme Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+  <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
   
-
-  
-    
-      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
-    
-      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
-    
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
-  <meta property="og:site_name" content="Vibhat Srivastava">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="Featured Work and Technical Case Studies">
+  <!-- Custom Modern Design System (with Cache Buster) -->
+  <link rel="stylesheet" href="/assets/css/main-custom.css?v=1791901987"><meta property="og:title" content="Featured Engineering Projects">
+  <meta property="og:description" content="Enterprise Infrastructure Automation, Agentic AI &amp; Cloud Platforms">
 
   
 
@@ -88,21 +47,13 @@
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:site" content="@">
-  <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Projects">
-  <meta property="twitter:description" content="Featured Work and Technical Case Studies">
+  <meta property="twitter:title" content="Featured Engineering Projects">
+  <meta property="twitter:description" content="Enterprise Infrastructure Automation, Agentic AI &amp; Cloud Platforms">
 
   
 
   
-
-
-  
-
-  
-
 </head>
 
 
@@ -111,7 +62,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://serverautomation.in/">Vibhat Srivastava</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand navbar-brand-logo" href="https://serverautomation.in/"><img alt="Vibhat Srivastava Logo" src="/assets/img/logo.png"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -121,24 +72,110 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
+            <a class="nav-link" href="/projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
+            <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
-          </li></ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
   </div>
 
+  
+    
+      <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+  <i class="fas fa-moon" style="color: #6366f1;" aria-hidden="true"></i>
+</button>
+
+    
   
 
   
 
 </nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Welcome to My Blog", \
+          "category" : "bloggingintroductionserverautomation", \
+          "url"      : "/blog/2026-05-18-welcome-to-my-blog/", \
+          "date"     : "May 18, 2026" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Vibhat Srivastava", \
+          "category" : "page", \
+          "url"      : "/about/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Engineering Blog &amp; Technical Insights", \
+          "category" : "page", \
+          "url"      : "/blog/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Contact &amp; Collaboration", \
+          "category" : "page", \
+          "url"      : "/contact/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Server Automation Tech", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Featured Engineering Projects", \
+          "category" : "page", \
+          "url"      : "/projects/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Professional Resume", \
+          "category" : "page", \
+          "url"      : "/resume/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
 
 
 
@@ -159,11 +196,11 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>Projects</h1>
+          <h1>Featured Engineering Projects</h1>
           
             
               <hr class="small">
-              <span class="page-subheading">Featured Work and Technical Case Studies</span>
+              <span class="page-subheading">Enterprise Infrastructure Automation, Agentic AI & Cloud Platforms</span>
             
           
 
@@ -184,152 +221,194 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <p>Below is a showcase of key engineering projects that demonstrate my experience in Platform Engineering, Infrastructure Automation, and Agentic AI solutions.</p>
+      <nav class="pro-breadcrumb" aria-label="Breadcrumb">
+  <a href="/"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+  <span class="separator">/</span>
+  <span class="current">Projects</span>
+</nav>
 
-<hr />
-
-<div class="project-card">
-  <h3>1. Infrastructure AI Co-Pilot</h3>
-  <div class="timeline-meta">Agentic AI Developer | 2025 - Present</div>
-  
-  <table class="project-meta-table">
-    <tr>
-      <td class="meta-label">Domain</td>
-      <td>Agentic AI, LLMs, Operations Automation</td>
-    </tr>
-    <tr>
-      <td class="meta-label">Technologies</td>
-      <td>
-        <div class="badge-container" style="margin: 0;">
-          <span class="skill-badge badge-ai">LangGraph</span>
-          <span class="skill-badge badge-ai">RAG</span>
-          <span class="skill-badge badge-lang">Python</span>
-          <span class="skill-badge badge-cloud">AWS API</span>
-          <span class="skill-badge badge-tools">GitHub Actions</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-
-  <div class="project-section-title">Challenge</div>
-  <p>Troubleshooting failing CI/CD pipelines and infrastructure alerts in a multi-region setup was highly manual, causing long developer blockages and higher mean time to resolution (MTTR).</p>
-
-  <div class="project-section-title">Solution</div>
-  <p>Architected an autonomous AI Co-Pilot using LangGraph and Retrieval-Augmented Generation (RAG). The agent queries cloud logs (CloudWatch), cross-references codebase docs, and proposes (or auto-applies with approval) fixes for failing builds and infrastructure anomalies.</p>
-
-  <div class="project-section-title">My Contribution</div>
-  <p>Developed the multi-agent graph architecture, build tools for log analysis, custom integration points with the AWS SDK, and the vector storage pipelines for developer runbooks.</p>
-
-  <div class="project-section-title">Key Achievements</div>
-  <ul>
-    <li>Reduced incident troubleshooting Mean Time to Resolution (MTTR) by <strong>60%</strong>.</li>
-    <li>Automated <strong>75%</strong> of routine build error resolutions.</li>
-    <li>Implemented secure, Human-in-the-Loop approval workflows for active infrastructure state modifications.</li>
-  </ul>
+<div class="lead" style="margin-bottom: 2rem;">
+  A showcase of enterprise-scale automation, Agentic AI developer platforms, and cloud infrastructure systems architected and delivered across 14+ years in engineering.
 </div>
 
+<!-- =====================================================================
+     Project 1: Multi-Cloud Infrastructure as Code Platform
+     ===================================================================== -->
 <div class="project-card">
-  <h3>2. Self-Service Developer Platform Portal</h3>
-  <div class="timeline-meta">Lead Platform Architect | 2024 - 2025</div>
+  <div class="project-card-image-wrap" title="Click to enlarge architecture diagram">
+    <img src="/assets/img/projects/project1.svg" alt="Multi-Cloud Infrastructure Automation Architecture Diagram" class="project-card-image" loading="lazy" />
+  </div>
+  <div class="project-card-body">
+    <div class="project-meta-bar">
+      <span class="role-badge">Lead Infrastructure Architect</span>
+      <span class="timeline-pill"><i class="far fa-calendar-alt"></i> Enterprise Production</span>
+    </div>
 
-  <table class="project-meta-table">
-    <tr>
-      <td class="meta-label">Domain</td>
-      <td>Platform Engineering, IaC, Cloud Security</td>
-    </tr>
-    <tr>
-      <td class="meta-label">Technologies</td>
-      <td>
-        <div class="badge-container" style="margin: 0;">
-          <span class="skill-badge badge-cloud">AWS EKS</span>
-          <span class="skill-badge badge-cloud">Terraform</span>
-          <span class="skill-badge badge-tools">Ansible</span>
-          <span class="skill-badge badge-devops">Docker</span>
-          <span class="skill-badge badge-lang">Python</span>
-        </div>
-      </td>
-    </tr>
-  </table>
+    <h3>Enterprise Multi-Cloud Infrastructure as Code &amp; Configuration Automation</h3>
+    <p>
+      Engineered an end-to-end Infrastructure as Code (IaC) and configuration management ecosystem spanning AWS cloud environments and enterprise on-premises hypervisors. Replaced manual server configurations and ad-hoc scripts with modular, version-controlled Terraform modules and idempotent Ansible playbooks.
+    </p>
 
-  <div class="project-section-title">Challenge</div>
-  <p>Developer onboarding and new environment creation involved manual Jira tickets, taking between 3 to 5 business days per developer and leading to layout inconsistency across environments.</p>
+    <div class="metrics-grid">
+      <div class="metric-item">
+        <span class="metric-value">85%</span>
+        <span class="metric-label">Deployment Speedup</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">99.99%</span>
+        <span class="metric-label">Platform Availability</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">Zero</span>
+        <span class="metric-label">Configuration Drift</span>
+      </div>
+    </div>
 
-  <div class="project-section-title">Solution</div>
-  <p>Designed a self-service developer portal integrating Terraform cloud templates and Kubernetes (AWS EKS) namespaces, allowing engineers to bootstrap isolated, compliant dev/test environments on-demand.</p>
+    <h4>Technical Highlights</h4>
+    <ul>
+      <li><strong>Modular Terraform Stacks:</strong> Parameterized reusable modules for VPCs, multi-tier security groups, RDS databases, and auto-scaling compute pools.</li>
+      <li><strong>Idempotent Ansible Automation:</strong> Standardized OS hardening, security compliance baseline patching, and automated application runtime deployments across 500+ nodes.</li>
+      <li><strong>Automated Validation CI/CD:</strong> Integrated <code>tflint</code>, <code>checkov</code> security scanning, and automated plan-apply pipelines via GitHub Actions.</li>
+    </ul>
 
-  <div class="project-section-title">My Contribution</div>
-  <p>Built the core Python automation back-end, wrote reusable Terraform modules mapping company security compliance rules, and set up Ansible playbooks for automated server configurations.</p>
+    <div class="tech-stack-wrap">
+      <span class="tech-tag">Terraform</span>
+      <span class="tech-tag">Ansible</span>
+      <span class="tech-tag">AWS (VPC, EC2, RDS, IAM)</span>
+      <span class="tech-tag">PowerShell</span>
+      <span class="tech-tag">GitHub Actions</span>
+      <span class="tech-tag">Python</span>
+    </div>
 
-  <div class="project-section-title">Key Achievements</div>
-  <ul>
-    <li>Decreased environment provisioning time from <strong>4 days to under 15 minutes</strong>.</li>
-    <li>Eliminated environment configuration drift across dev/prod environments by <strong>100%</strong>.</li>
-    <li>Implemented automated resource-expiry limits, saving over <strong>$45k/year</strong> in orphaned development servers.</li>
-  </ul>
+    <div class="project-links">
+      <a href="https://github.com/vibhatsrivastava" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-primary">
+        <i class="fab fa-github"></i> View GitHub Repositories
+      </a>
+      <a href="/contact" class="btn-pro btn-pro-outline">
+        <i class="fas fa-envelope"></i> Inquire About Architecture
+      </a>
+    </div>
+  </div>
 </div>
 
+<!-- =====================================================================
+     Project 2: Agentic AI DevOps & Incident Remediation Platform
+     ===================================================================== -->
 <div class="project-card">
-  <h3>3. Enterprise CI/CD Pipeline Standardization</h3>
-  <div class="timeline-meta">Senior DevOps Engineer | 2022 - 2023</div>
+  <div class="project-card-image-wrap" title="Click to enlarge architecture diagram">
+    <img src="/assets/img/projects/project2.svg" alt="Agentic AI DevOps Platform Diagram" class="project-card-image" loading="lazy" />
+  </div>
+  <div class="project-card-body">
+    <div class="project-meta-bar">
+      <span class="role-badge">AI &amp; DevOps Engineer</span>
+      <span class="timeline-pill"><i class="far fa-calendar-alt"></i> Innovation &amp; Platform</span>
+    </div>
 
-  <table class="project-meta-table">
-    <tr>
-      <td class="meta-label">Domain</td>
-      <td>DevOps, Release Engineering, CI/CD</td>
-    </tr>
-    <tr>
-      <td class="meta-label">Technologies</td>
-      <td>
-        <div class="badge-container" style="margin: 0;">
-          <span class="skill-badge badge-tools">GitHub Actions</span>
-          <span class="skill-badge badge-devops">Docker</span>
-          <span class="skill-badge badge-tools">SonarQube</span>
-          <span class="skill-badge badge-tools">Prometheus</span>
-          <span class="skill-badge badge-tools">Grafana</span>
-        </div>
-      </td>
-    </tr>
-  </table>
+    <h3>Autonomous Agentic DevOps &amp; Incident Remediation Platform</h3>
+    <p>
+      Designed and implemented an autonomous AI agent framework using LangGraph and Large Language Models (LLMs) to automate cloud incident detection, telemetry log analysis, and self-healing remediation. The system ingests observability metrics and automatically triages root causes before dispatching verified corrective actions.
+    </p>
 
-  <div class="project-section-title">Challenge</div>
-  <p>Lack of uniformity across dozens of pipeline styles led to slow deployment times, security vulnerabilities, and no visual dashboard to track deployment health.</p>
+    <div class="metrics-grid">
+      <div class="metric-item">
+        <span class="metric-value">60%</span>
+        <span class="metric-label">MTTR Reduction</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">24/7</span>
+        <span class="metric-label">Autonomous Triage</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">85%</span>
+        <span class="metric-label">Root-Cause Accuracy</span>
+      </div>
+    </div>
 
-  <div class="project-section-title">Solution</div>
-  <p>Migrated diverse legacy CI systems to a centralized, standardized repository of reusable GitHub Actions workflows containing auto-linting, SAST, and automated canary releases.</p>
+    <h4>Technical Highlights</h4>
+    <ul>
+      <li><strong>Stateful Graph Workflows:</strong> Orchestrated multi-agent decision loops with LangGraph to inspect system state, verify hypotheses, and execute remediation actions safely.</li>
+      <li><strong>RAG on Infrastructure Docs:</strong> Vector retrieval augmented with internal architecture manuals and runbooks to synthesize exact mitigation steps.</li>
+      <li><strong>Safety Guardrails:</strong> Human-in-the-loop approvals for critical actions, with automated rollback capabilities if health metrics do not recover within 60 seconds.</li>
+    </ul>
 
-  <div class="project-section-title">My Contribution</div>
-  <p>Designed reusable workflow templates, built pipeline health exporter metrics to Prometheus, and created real-time Grafana dashboards monitoring build times and deployment error rates.</p>
+    <div class="tech-stack-wrap">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">LangGraph</span>
+      <span class="tech-tag">Large Language Models (LLMs)</span>
+      <span class="tech-tag">Retrieval-Augmented Generation (RAG)</span>
+      <span class="tech-tag">AWS CloudWatch</span>
+      <span class="tech-tag">Docker</span>
+    </div>
 
-  <div class="project-section-title">Key Achievements</div>
-  <ul>
-    <li>Reduced deployment cycle time by <strong>70%</strong>.</li>
-    <li>Achieved <strong>zero-downtime</strong> blue-green deployment strategies for customer-facing services.</li>
-    <li>Added automated SAST scanning to <strong>100%</strong> of active software projects.</li>
-  </ul>
+    <div class="project-links">
+      <a href="https://github.com/vibhatsrivastava" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-primary">
+        <i class="fab fa-github"></i> Explore Agentic AI Work
+      </a>
+      <a href="/blog" class="btn-pro btn-pro-outline">
+        <i class="fas fa-book-open"></i> Read Technical Blog
+      </a>
+    </div>
+  </div>
 </div>
 
-<hr />
+<!-- =====================================================================
+     Project 3: Enterprise Kubernetes GitOps Platform
+     ===================================================================== -->
+<div class="project-card">
+  <div class="project-card-image-wrap" title="Click to enlarge architecture diagram">
+    <img src="/assets/img/projects/project3.svg" alt="Kubernetes GitOps Architecture Diagram" class="project-card-image" loading="lazy" />
+  </div>
+  <div class="project-card-body">
+    <div class="project-meta-bar">
+      <span class="role-badge">Lead Platform Engineer</span>
+      <span class="timeline-pill"><i class="far fa-calendar-alt"></i> Enterprise Operations</span>
+    </div>
 
-<h2 id="open-source--community">Open Source &amp; Community</h2>
+    <h3>Enterprise Kubernetes GitOps Platform (AWS EKS &amp; ArgoCD)</h3>
+    <p>
+      Architected a scalable, multi-tenant Kubernetes platform running on AWS Elastic Kubernetes Service (EKS). Implemented declarative GitOps continuous delivery with ArgoCD, allowing development teams to manage microservice releases entirely through declarative Git pull requests.
+    </p>
 
-<h3 id="ai-agent-operations-dashboard">AI Agent Operations Dashboard</h3>
-<ul>
-  <li><strong>Role:</strong> Maintainer &amp; Creator</li>
-  <li><strong>Description:</strong> A light-weight local monitoring utility that visualizes multi-agent graphs and token consumption metrics during runtime. Built with Python and Tailwind CSS.</li>
-  <li><a href="https://github.com/vibhatsrivastava">GitHub Repository</a></li>
-</ul>
+    <div class="metrics-grid">
+      <div class="metric-item">
+        <span class="metric-value">200+</span>
+        <span class="metric-label">Deploys / Week</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">0 sec</span>
+        <span class="metric-label">Release Downtime</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">95%</span>
+        <span class="metric-label">Rollback Automation</span>
+      </div>
+    </div>
 
-<h3 id="custom-ansible-modules">Custom Ansible Modules</h3>
-<ul>
-  <li><strong>Description:</strong> Contributed enhancements to various community Ansible collections, improving compatibility with Windows platform management.</li>
-  <li><a href="https://github.com/vibhatsrivastava">Contributions Link</a></li>
-</ul>
+    <h4>Technical Highlights</h4>
+    <ul>
+      <li><strong>GitOps Delivery:</strong> Declarative cluster state synchronization with automated drift detection and self-healing reconciliation via ArgoCD.</li>
+      <li><strong>Zero-Downtime Rollouts:</strong> Configured progressive canary deployments and pod disruption budgets with automated metric analysis.</li>
+      <li><strong>Observability Stack:</strong> Integrated Prometheus, Grafana dashboards, and fluent-bit log shipping for unified cluster health monitoring.</li>
+    </ul>
 
-<hr />
+    <div class="tech-stack-wrap">
+      <span class="tech-tag">Kubernetes (EKS)</span>
+      <span class="tech-tag">ArgoCD</span>
+      <span class="tech-tag">Helm</span>
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">Prometheus &amp; Grafana</span>
+      <span class="tech-tag">AWS Cloud</span>
+    </div>
 
-<div style="text-align: center; margin-top: 40px;">
-  <p>Interested in collaborating or building high-performance systems?</p>
-  <a href="/contact" class="btn btn-primary">Let's Work Together</a>
+    <div class="project-links">
+      <a href="https://github.com/vibhatsrivastava" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-primary">
+        <i class="fab fa-github"></i> View GitHub Repositories
+      </a>
+      <a href="/resume" class="btn-pro btn-pro-outline">
+        <i class="fas fa-file-alt"></i> View Experience Resume
+      </a>
+    </div>
+  </div>
 </div>
 
 
@@ -425,6 +504,10 @@
   
 
 
+
+  
+    <script src="/assets/js/main-custom.js"></script>
+  
 
 
 

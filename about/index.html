@@ -9,73 +9,32 @@
 
   
 
-  <title>About Me</title>
+  <title>Vibhat Srivastava</title>
 
   
   <meta name="author" content="Vibhat Srivastava">
   
 
-  <meta name="description" content="Senior DevOps Engineer &amp; Agentic AI Developer">
+  <meta name="description" content="Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer">
 
   
 
-  
+  <!-- Google Fonts Preconnect & Modern Typefaces: Outfit, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-    
-      
+  <!-- Core Frameworks -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-    
-      
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-
-
-    
+  <!-- Base Theme Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+  <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
   
-
-  
-    
-      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
-    
-      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
-    
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
-  <meta property="og:site_name" content="Vibhat Srivastava">
-  <meta property="og:title" content="About Me">
-  <meta property="og:description" content="Senior DevOps Engineer &amp; Agentic AI Developer">
+  <!-- Custom Modern Design System (with Cache Buster) -->
+  <link rel="stylesheet" href="/assets/css/main-custom.css?v=1791901987"><meta property="og:title" content="Vibhat Srivastava">
+  <meta property="og:description" content="Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer">
 
   
 
@@ -88,21 +47,13 @@
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:site" content="@">
-  <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="About Me">
-  <meta property="twitter:description" content="Senior DevOps Engineer &amp; Agentic AI Developer">
+  <meta property="twitter:title" content="Vibhat Srivastava">
+  <meta property="twitter:description" content="Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer">
 
   
 
   
-
-
-  
-
-  
-
 </head>
 
 
@@ -111,7 +62,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://serverautomation.in/">Vibhat Srivastava</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand navbar-brand-logo" href="https://serverautomation.in/"><img alt="Vibhat Srivastava Logo" src="/assets/img/logo.png"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -121,24 +72,110 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
+            <a class="nav-link" href="/projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
+            <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
-          </li></ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
   </div>
 
+  
+    
+      <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+  <i class="fas fa-moon" style="color: #6366f1;" aria-hidden="true"></i>
+</button>
+
+    
   
 
   
 
 </nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Welcome to My Blog", \
+          "category" : "bloggingintroductionserverautomation", \
+          "url"      : "/blog/2026-05-18-welcome-to-my-blog/", \
+          "date"     : "May 18, 2026" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Vibhat Srivastava", \
+          "category" : "page", \
+          "url"      : "/about/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Engineering Blog &amp; Technical Insights", \
+          "category" : "page", \
+          "url"      : "/blog/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Contact &amp; Collaboration", \
+          "category" : "page", \
+          "url"      : "/contact/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Server Automation Tech", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Featured Engineering Projects", \
+          "category" : "page", \
+          "url"      : "/projects/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Professional Resume", \
+          "category" : "page", \
+          "url"      : "/resume/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
 
 
 
@@ -159,11 +196,11 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>About Me</h1>
+          <h1>Vibhat Srivastava</h1>
           
             
               <hr class="small">
-              <span class="page-subheading">Senior DevOps Engineer & Agentic AI Developer</span>
+              <span class="page-subheading">Infrastructure Automation Architect | Agentic AI Developer | DevOps Engineer</span>
             
           
 
@@ -184,105 +221,187 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <h2 id="professional-summary">Professional Summary</h2>
+      <nav class="pro-breadcrumb" aria-label="Breadcrumb">
+  <a href="/"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+  <span class="separator">/</span>
+  <span class="current">About</span>
+</nav>
 
-<p>I am a <strong>Senior DevOps and Infrastructure Automation Engineer</strong> with <strong>14+ years of experience</strong> designing, automating, and supporting enterprise IT infrastructure across on-premises and cloud environments.</p>
-
-<p>My expertise includes Infrastructure Automation, Configuration Management, CI/CD, Cloud Platforms, Containerization, and Platform Operations. Throughout my career, I have focused on reducing operational complexity, improving reliability, and accelerating delivery through automation-first approaches.</p>
-
-<p>Over the past year, I have expanded my focus into <strong>Agentic AI development</strong>, building AI-powered solutions using Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), LangGraph, and autonomous AI agents. I am particularly interested in applying AI to infrastructure automation, operational efficiency, and developer productivity.</p>
-
-<hr />
-
-<h3 id="core-strengths">Core Strengths</h3>
-
-<div class="showcase-grid">
-  <div class="interactive-card">
-    <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
-    <h3>Cloud Infrastructure</h3>
-    <p>Designing, configuring, and managing enterprise AWS environments with security, scalability, and cost-efficiency in mind.</p>
+<div class="row align-items-center" style="margin-bottom: 2.75rem;">
+  <div class="col-lg-8 col-md-7">
+    <h3 style="margin-top: 0;">Hi, I'm Vibhat Srivastava 👋</h3>
+    <p class="lead" style="font-size: 1.15rem; color: var(--text-primary);">
+      An <strong>Infrastructure Automation Architect</strong>, <strong>Agentic AI Developer</strong>, and <strong>Senior DevOps Engineer</strong> with <strong>14+ years of hands-on experience</strong> architecting, developing, and operating mission-critical enterprise systems and intelligent automation platforms.
+    </p>
+    <p>
+      Over the last decade and a half, I have spearheaded infrastructure transformations from manual, ticket-driven operations to modern, highly reliable, and self-healing cloud ecosystems. As the architect and founder behind <strong>Server Automation Tech</strong>, I design and develop custom tools, developer platforms, and <strong>Agentic AI workflows</strong>—engineering autonomous SRE capabilities, zero-drift GitOps pipelines, and RAG-driven incident triage systems.
+    </p>
   </div>
-  <div class="interactive-card">
-    <div class="card-icon"><i class="fa-solid fa-code-branch"></i></div>
-    <h3>Platform Operations</h3>
-    <p>Building reliable developer platforms, containerizing workloads (Docker), and establishing solid CI/CD pipelines.</p>
-  </div>
-  <div class="interactive-card">
-    <div class="card-icon"><i class="fa-solid fa-square-rss"></i></div>
-    <h3>Agentic Workflows</h3>
-    <p>Orchestrating multi-agent systems, context-aware RAG pipelines, and conversational developer tools powered by LLMs.</p>
+  <div class="col-lg-4 col-md-5 text-center text-md-right">
+    <div class="profile-pic-frame">
+      <img src="/assets/img/vibhat-srivastava.jpg" alt="Vibhat Srivastava" class="profile-pic-img" />
+    </div>
   </div>
 </div>
 
 <hr />
 
-<h3 id="technical-expertise">Technical Expertise</h3>
+<h2 id="what-drives-me">What Drives Me</h2>
 
-<div style="margin-top: 20px;">
-  <h4>Programming &amp; Scripting</h4>
-  <div class="badge-container">
-    <span class="skill-badge badge-lang"><i class="fa-brands fa-python"></i> Python</span>
-    <span class="skill-badge badge-lang"><i class="fa-solid fa-terminal"></i> PowerShell</span>
-    <span class="skill-badge badge-lang"><i class="fa-solid fa-code"></i> Bash / Shell</span>
-    <span class="skill-badge badge-lang"><i class="fa-brands fa-js"></i> JavaScript / TypeScript</span>
+<div class="row" style="margin: 2rem 0;">
+  <div class="col-md-4 mb-4">
+    <div class="timeline-content" style="height: 100%;">
+      <div style="font-size: 1.75rem; color: var(--accent-primary); margin-bottom: 0.5rem;"><i class="fas fa-magic"></i></div>
+      <h4>Automation-First</h4>
+      <p style="font-size: 0.9rem; margin-bottom: 0;">
+        If a task must be executed more than twice, it deserves an automated pipeline. Eliminating manual toil unleashes teams to focus on high-impact innovation.
+      </p>
+    </div>
   </div>
-
-  <h4>DevOps &amp; Platform Engineering</h4>
-  <div class="badge-container">
-    <span class="skill-badge badge-devops"><i class="fa-brands fa-docker"></i> Docker</span>
-    <span class="skill-badge badge-devops"><i class="fa-solid fa-cubes"></i> Kubernetes / EKS</span>
-    <span class="skill-badge badge-cloud"><i class="fa-solid fa-cloud"></i> Terraform (IaC)</span>
-    <span class="skill-badge badge-tools"><i class="fa-solid fa-bolt"></i> Ansible</span>
-    <span class="skill-badge badge-tools"><i class="fa-brands fa-github"></i> GitHub Actions / GitLab CI</span>
+  <div class="col-md-4 mb-4">
+    <div class="timeline-content" style="height: 100%;">
+      <div style="font-size: 1.75rem; color: var(--accent-secondary); margin-bottom: 0.5rem;"><i class="fas fa-shield-alt"></i></div>
+      <h4>Resilience by Design</h4>
+      <p style="font-size: 0.9rem; margin-bottom: 0;">
+        High availability isn't an accident. I engineer architectures with automated self-healing, zero-drift Infrastructure as Code, and observable metrics.
+      </p>
+    </div>
   </div>
-
-  <h4>AI &amp; Agentic Systems</h4>
-  <div class="badge-container">
-    <span class="skill-badge badge-ai"><i class="fa-solid fa-brain"></i> LangGraph</span>
-    <span class="skill-badge badge-ai"><i class="fa-solid fa-network-wired"></i> LangChain</span>
-    <span class="skill-badge badge-ai"><i class="fa-solid fa-database"></i> Vector Databases / RAG</span>
-    <span class="skill-badge badge-ai"><i class="fa-solid fa-robot"></i> Autonomous Agents</span>
-  </div>
-</div>
-
-<hr />
-
-<h3 id="education--certifications">Education &amp; Certifications</h3>
-
-<div class="showcase-grid">
-  <div class="interactive-card">
-    <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-    <h3>Education</h3>
-    <p><strong>Bachelor of Engineering / Computer Science</strong></p>
-    <p>Strong foundation in software engineering principles, algorithms, data structures, and operating systems.</p>
-  </div>
-  <div class="interactive-card">
-    <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
-    <h3>Key Certifications</h3>
-    <p>• AWS Certified Solutions Architect</p>
-    <p>• Infrastructure Automation Certifications</p>
-    <p>• Modern DevOps Tools &amp; Architectures</p>
+  <div class="col-md-4 mb-4">
+    <div class="timeline-content" style="height: 100%;">
+      <div style="font-size: 1.75rem; color: var(--accent-tertiary); margin-bottom: 0.5rem;"><i class="fas fa-brain"></i></div>
+      <h4>Agentic AI Innovation</h4>
+      <p style="font-size: 0.9rem; margin-bottom: 0;">
+        Pioneering the intersection of LLM agents and platform operations—enabling automated root-cause detection, runbook retrieval, and automated remediation.
+      </p>
+    </div>
   </div>
 </div>
 
 <hr />
 
-<h3 id="what-drives-me">What Drives Me</h3>
+<h2 id="core-technical-competencies">Core Technical Competencies</h2>
 
-<blockquote>
-  <p>“I am motivated by the challenge of turning manual, error-prone operational tasks into automated, self-healing, and observable systems. As the landscape shifts toward AI, my goal is to blend classic systems engineering with AI agents to unlock new levels of developer productivity and infrastructure resilience.”</p>
-</blockquote>
+<div class="skills-section">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Infrastructure Automation (Terraform &amp; Ansible)</span>
+          <span class="skill-percentage">95%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="95%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>DevOps &amp; CI/CD (GitHub Actions, Jenkins, ArgoCD)</span>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="90%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Cloud Platforms (Amazon Web Services - AWS)</span>
+          <span class="skill-percentage">88%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="88%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>PowerShell, Python &amp; Shell Scripting</span>
+          <span class="skill-percentage">92%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="92%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Containerization (Docker &amp; Kubernetes / EKS)</span>
+          <span class="skill-percentage">85%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Agentic AI &amp; LLM Workflows (LangGraph, RAG)</span>
+          <span class="skill-percentage">82%</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-progress="82%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <hr />
 
-<h3 id="lets-connect">Let’s Connect</h3>
+<h2 id="beyond-work--personal-interests">Beyond Work &amp; Personal Interests</h2>
 
-<p>If you want to collaborate on platform engineering, automation, or LLM-driven infrastructure agent projects, feel free to reach out.</p>
+<p>When I’m not writing Terraform configurations or architecting AI workflows, you can find me:</p>
+<ul>
+  <li><strong>HomeLab &amp; Bare-Metal Experimentation:</strong> Maintaining a dedicated homelab cluster testing new hypervisors, Kubernetes distros, and self-hosted open-source tooling.</li>
+  <li><strong>Technical Writing:</strong> Documenting real-world DevOps practices and platform engineering guides on my <a href="/blog">Blog</a>.</li>
+  <li><strong>Open Source &amp; Mentorship:</strong> Actively helping junior engineers navigate cloud architectures and contributing to automation repositories.</li>
+  <li><strong>Outdoor Adventures:</strong> Long-distance cycling and mountain hiking to reset and gain fresh perspective.</li>
+</ul>
 
-<div style="margin-top: 20px; gap: 10px; display: flex; flex-wrap: wrap;">
-  <a href="mailto:vibhat.sri13@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
-  <a href="https://linkedin.com/in/vibhat-srivastava" class="btn btn-outline-primary" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-  <a href="https://github.com/vibhatsrivastava" class="btn btn-outline-primary" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+<hr />
+
+<h2 id="peer-testimonials--recommendations">Peer Testimonials &amp; Recommendations</h2>
+
+<div class="row" style="margin: 2rem 0;">
+  <div class="col-md-6 mb-4">
+    <div class="timeline-content">
+      <p style="font-style: italic; font-size: 0.95rem; margin-bottom: 1rem;">
+        "Vibhat is one of the most reliable infrastructure automation leaders I have worked with. His ability to take complex, legacy enterprise environments and systematically turn them into automated, zero-drift pipelines saved our team countless hours every sprint."
+      </p>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--accent-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700;">EP</div>
+        <div>
+          <div style="font-weight: 700; font-size: 0.9rem;">Engineering Director</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Enterprise Cloud Services</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="timeline-content">
+      <p style="font-style: italic; font-size: 0.95rem; margin-bottom: 1rem;">
+        "His recent work integrating autonomous AI agents and LangGraph into our DevOps triage workflows significantly reduced our mean time to resolution. He bridges deep systems expertise with cutting-edge AI innovation."
+      </p>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--accent-secondary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700;">SA</div>
+        <div>
+          <div style="font-weight: 700; font-size: 0.9rem;">Principal Solutions Architect</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Platform &amp; Reliability Engineering</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center" style="margin: 3rem 0;">
+  <a href="/projects" class="btn-pro btn-pro-primary"><i class="fas fa-th-large"></i> View Featured Projects</a>
+  <a href="/resume" class="btn-pro btn-pro-outline"><i class="fas fa-file-alt"></i> View Resume</a>
+  <a href="/contact" class="btn-pro btn-pro-outline"><i class="fas fa-paper-plane"></i> Get In Touch</a>
 </div>
 
 
@@ -378,6 +497,10 @@
   
 
 
+
+  
+    <script src="/assets/js/main-custom.js"></script>
+  
 
 
 

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)" rx="16"/>
+  <!-- Decorative Grid -->
+  <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid3)" rx="16"/>
+
+  <!-- Center Card -->
+  <rect x="80" y="55" width="640" height="340" rx="12" fill="rgba(15,23,42,0.9)" stroke="rgba(59,130,246,0.3)" stroke-width="2"/>
+  
+  <!-- Window Header -->
+  <rect x="80" y="55" width="640" height="40" rx="12" fill="#1e293b"/>
+  <circle cx="106" cy="75" r="6" fill="#ef4444"/>
+  <circle cx="126" cy="75" r="6" fill="#f59e0b"/>
+  <circle cx="146" cy="75" r="6" fill="#10b981"/>
+  <text x="400" y="80" fill="#94a3b8" font-family="'Plus Jakarta Sans', monospace" font-size="13" text-anchor="middle">kubernetes-gitops.yaml // ArgoCD &amp; AWS EKS</text>
+
+  <!-- Flow Nodes -->
+  <!-- Node 1: Git Commit -->
+  <rect x="120" y="140" width="140" height="70" rx="8" fill="#1e293b" stroke="#f43f5e" stroke-width="1.5"/>
+  <text x="190" y="172" fill="#f43f5e" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" text-anchor="middle">Git Repository</text>
+  <text x="190" y="194" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Manifests as Code</text>
+
+  <!-- Arrow 1 -->
+  <path d="M 260 175 L 320 175" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,4"/>
+  <polygon points="320,171 328,175 320,179" fill="#3b82f6"/>
+
+  <!-- Node 2: ArgoCD Sync -->
+  <rect x="330" y="140" width="140" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="400" y="172" fill="#3b82f6" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" text-anchor="middle">ArgoCD Controller</text>
+  <text x="400" y="194" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Automated Sync</text>
+
+  <!-- Arrow 2 -->
+  <path d="M 470 175 L 530 175" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,4"/>
+  <polygon points="530,171 538,175 530,179" fill="#3b82f6"/>
+
+  <!-- Node 3: Target K8s Cluster -->
+  <rect x="540" y="140" width="140" height="70" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="610" y="172" fill="#06b6d4" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" text-anchor="middle">EKS Cluster</text>
+  <text x="610" y="194" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Zero-Downtime Rollout</text>
+
+  <!-- Metrics Badges below -->
+  <rect x="120" y="260" width="160" height="90" rx="10" fill="rgba(30,41,59,0.8)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="200" y="295" fill="#3b82f6" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" text-anchor="middle">200+</text>
+  <text x="200" y="325" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="middle">Deployments / Week</text>
+
+  <rect x="320" y="260" width="160" height="90" rx="10" fill="rgba(30,41,59,0.8)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="400" y="295" fill="#06b6d4" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" text-anchor="middle">0 sec</text>
+  <text x="400" y="325" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="middle">Deployment Downtime</text>
+
+  <rect x="520" y="260" width="160" height="90" rx="10" fill="rgba(30,41,59,0.8)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="600" y="295" fill="#10b981" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" text-anchor="middle">95%</text>
+  <text x="600" y="325" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="middle">Rollback Automation</text>
+</svg>
