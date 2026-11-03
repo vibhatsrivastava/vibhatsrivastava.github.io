@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
   
   <!-- Custom Modern Design System (with Cache Buster) -->
-  <link rel="stylesheet" href="/assets/css/main-custom.css?v=1791901987"><meta property="og:title" content="Featured Engineering Projects">
+  <link rel="stylesheet" href="/assets/css/main-custom.css?v=1793722879"><meta property="og:title" content="Featured Engineering Projects">
   <meta property="og:description" content="Enterprise Infrastructure Automation, Agentic AI &amp; Cloud Platforms">
 
   
@@ -229,6 +229,85 @@
 
 <div class="lead" style="margin-bottom: 2rem;">
   A showcase of enterprise-scale automation, Agentic AI developer platforms, and cloud infrastructure systems architected and delivered across 14+ years in engineering.
+</div>
+
+<!-- =====================================================================
+     Flagship Release: Network Control Plane (v1.0.0-GA)
+     ===================================================================== -->
+<div class="project-card flagship-card" id="network-control-plane">
+  <div class="project-card-image-wrap" title="Click to view full architecture specifications">
+    <a href="https://github.com/ServerAutomation-IN/Network-Control-Plane" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/projects/network-control-plane.svg" alt="Network Control Plane Architecture Overview" class="project-card-image" loading="lazy" />
+    </a>
+  </div>
+  <div class="project-card-body">
+    <div class="project-meta-bar">
+      <span class="flagship-badge"><i class="fas fa-crown"></i> Flagship Open-Source Platform</span>
+      <span class="role-badge">Creator &amp; Principal Systems Architect</span>
+      <span class="timeline-pill"><i class="fas fa-tag"></i> v1.0.0-GA Ready</span>
+      <span class="timeline-pill"><i class="fas fa-balance-scale"></i> Apache-2.0</span>
+    </div>
+
+    <h3>Network Control Plane &mdash; Provider-Neutral Workload Networking Platform</h3>
+    <p class="lead" style="font-size: 1.05rem; margin-bottom: 1rem;">
+      An enterprise-grade, open-source control plane for application and workload networking. Unifies infrastructure discovery, interactive topology graph visualization, IP address management (IPAM), policy governance, declarative GitOps drift reconciliation, enterprise secrets integration, and human-in-the-loop agentic AI assistance across multi-cloud and container environments.
+    </p>
+
+    <div class="metrics-grid">
+      <div class="metric-item">
+        <span class="metric-value">v1.0.0-GA</span>
+        <span class="metric-label">Production Ready</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">Multi-Cloud</span>
+        <span class="metric-label">Docker, K8s, AWS, Azure, GCP</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">Zero-Drift</span>
+        <span class="metric-label">Continuous GitOps Sync</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">Governed AI</span>
+        <span class="metric-label">Agentic Diagnostics &amp; Reachability</span>
+      </div>
+    </div>
+
+    <h4>Key Architectural Highlights</h4>
+    <ul>
+      <li><strong>Interactive Topology Canvas &amp; Visual Discovery:</strong> Dynamic visual topology graph built in React 18 / Vite with real-time WebSocket / SSE telemetry, tracking multi-host container networks, ingress points, and connected workloads.</li>
+      <li><strong>Intelligent IPAM &amp; Subnet Collision Engine:</strong> Real-time cross-network CIDR conflict engine preventing overlapping subnets, address pool exhaustion, and conflicting gateway allocations.</li>
+      <li><strong>Continuous GitOps &amp; Drift Reconciliation:</strong> Declarative YAML schema (<code>network-control-plane/v1</code>) synchronized periodically with GitHub, GitLab, and Bitbucket via an asynchronous Redis and ARQ worker task queue.</li>
+      <li><strong>Governed Agentic AI Diagnostics:</strong> Graph-based automated reachability analysis, natural language inventory queries, and blast-radius evaluation with mandatory human-in-the-loop execution safety.</li>
+      <li><strong>Enterprise Zero-Trust Secrets &amp; SSO:</strong> Dynamic URI secrets resolution (<code>vault://</code>, <code>aws-secret://</code>, <code>azure-vault://</code>) with HashiCorp Vault, AWS Secrets Manager, and Okta OIDC / SAML 2.0 Single Sign-On.</li>
+    </ul>
+
+    <div class="tech-stack-wrap">
+      <span class="tech-tag">Python 3.12+ (FastAPI)</span>
+      <span class="tech-tag">React 18 / Vite / TypeScript</span>
+      <span class="tech-tag">Redis &amp; ARQ Async Queue</span>
+      <span class="tech-tag">PostgreSQL 16+ (asyncpg)</span>
+      <span class="tech-tag">Docker &bull; Swarm &bull; Kubernetes CNI</span>
+      <span class="tech-tag">AWS VPC &bull; Azure VNet &bull; GCP VPC</span>
+      <span class="tech-tag">HashiCorp Vault</span>
+      <span class="tech-tag">Agentic AI &amp; Graph Traversal</span>
+      <span class="tech-tag">GitOps &bull; OIDC/Okta SSO</span>
+    </div>
+
+    <div class="project-links">
+      <a href="https://github.com/ServerAutomation-IN/Network-Control-Plane" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-primary">
+        <i class="fab fa-github"></i> View GitHub Repository
+      </a>
+      <a href="https://github.com/ServerAutomation-IN/Network-Control-Plane/releases/tag/v1.0.0-GA" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-outline">
+        <i class="fas fa-tag"></i> v1.0.0-GA Release Notes
+      </a>
+      <a href="https://github.com/ServerAutomation-IN/Network-Control-Plane/blob/main/docs/architecture/Architecture.md" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-outline">
+        <i class="fas fa-project-diagram"></i> System Architecture Specs
+      </a>
+      <a href="/assets/img/projects/network-control-plane-architecture.png" target="_blank" rel="noopener noreferrer" class="btn-pro btn-pro-outline">
+        <i class="fas fa-image"></i> High-Res Architecture Diagram
+      </a>
+    </div>
+  </div>
 </div>
 
 <!-- =====================================================================
